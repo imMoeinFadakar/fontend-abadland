@@ -1,0 +1,1060 @@
+
+
+
+
+:root{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+/* defenition of css variables  in forecast part */
+
+--dark : #f0f0f0 ;
+--text-dark: #000;
+--white : #fff ;
+--light-green : #C1D4B2;
+--dark-green:#70d4bd;
+--red:#FE0000;
+--green:#50F900;
+--yellow: #F4F900;
+--light-gray:#A8AEB7;
+
+/* defenition of css variables  in Advices part */
+
+--dark-gray: #D9D9D9 ;
+--bg:#F5F5F5;
+--table-header:#31523A;
+--tableGreen:#3C8E16;
+--tableOrange:#EF6400;
+--tableRed:#EF0000;
+
+/* rain color */
+
+--heavyRain:  rgba(122, 194, 204, 0.808);
+--LightRain:  rgba(122, 194, 204, 0.288);
+
+}
+
+/* The wrapper of hole page */
+
+.mobile__wrapper{
+    width: auto !important;
+    height: 84vh !important;
+	overflow-y: scroll !important;
+	box-shadow: 1px 1px  17px 3px rgb(160, 160, 160);
+    margin: none ;
+	scroll-behavior: smooth;
+	border: 4px solid #bbbbbb !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+}
+.mobile__wrapper::-webkit-scrollbar{
+
+}
+
+
+.Header{
+	padding: 0px;
+background-color: var(--dark);
+height: 95px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+z-index: 3 !important;
+}
+.BackArrow{
+width: 20px;
+height: 15px;
+margin-left: .4rem;
+}
+.selectVillaName{
+
+color: black !important;
+border: none;
+width: 100%;
+height: 36px;
+text-align: right;
+
+
+}
+.selectedDayOne{
+
+border: 3px dashed black !important;
+
+}
+
+.textSelectVilaName{
+    font-family: IRANSans;
+	font-style: normal;
+
+}
+
+
+.vilaNameWrapper{
+    display: flex;
+    justify-content: end;
+}
+
+.arrowWrapper{
+display: flex;
+justify-content: start;
+align-items: center;
+}
+
+.downArrow{
+width: 100%;
+height: 100%;
+}
+
+.optionsWrapper{
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.optionsWrapper p{
+padding-bottom: .1rem;
+margin: 0px;
+}
+
+.downArrowWrapper{
+       width: 21px;
+    height: 15px; 
+}
+
+/* cards select day  style */
+
+.weatherCards{
+
+height: 120px;
+display: flex;
+justify-content: center;
+}
+
+
+.blueWeatherCard{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #FAFFFF;
+    padding: .3rem;
+	width: 90%;
+	min-width: 80px !important;
+    margin: auto;
+	cursor: pointer !important;
+}
+
+.blueWeatherCard p{
+margin: 0px;
+}
+.TheSvgTop{
+    width: 50px !important;
+color: var(--yellow);
+}
+.textWeatherCardWrapper{
+    font-size: 8px;
+}
+.SecondWrapperSvg{
+    width: 20px;
+	padding: 0px;
+}
+.ArrowsSvg{
+    width: 20px;
+    padding-right: 4px;
+}
+.textDegreeWrapper{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Numwrapper{
+font-size: 12px;
+}
+.rainTextWrapper{
+	padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.textRain{
+	font-size: 8px;
+}
+
+
+
+/* text day Header and there text */
+
+
+.itWillBeStickToHead{
+
+position: sticky !important;
+top: 286px !important;
+z-index:  2 !important;
+}
+
+
+.dayHeader{
+
+
+	width: inherit;
+	background-color: var(--dark);
+text-align: center;
+margin: 0px;
+}
+.textdayHeader{
+color: var(--text-dark);
+	width: 100%;
+height: 30px;
+margin: 0px;
+font-weight: bold !important;
+}
+
+/* Logo wrappers and staff */
+/* using display grid */
+
+.LogoWrapper{
+	background-color: var(--light-green);
+display: grid;
+grid-template-columns: 14.4% 19% 13% 15.2% 23% 16%;
+grid-template-rows: 29px ;
+border: none !important;
+
+
+
+}
+
+/* first time its 0 - 6  */
+
+.firstTime{
+	width: 100%;
+	height: 30px;
+background-color: rgb(29, 151, 108);
+text-align: center;
+/* font-size: 20px; */
+}
+.textfirstTime{
+font-size: 17px;
+font-weight: bold;
+color: var(--white);
+background-color: rgb(29, 151, 108);
+
+}
+
+/* first table that belong to  0 - 6  */
+
+.tableData{
+background-color: var(--white);
+display: grid;
+grid-template-columns: 14% 19% 13% 16% 23% 15%;
+grid-template-rows: 30px ;
+text-align: center;
+}
+
+.cell{
+	border-bottom: dashed 1px black;
+border-left: .5px solid black;
+
+
+}
+.tableText{
+	font-size: 14px !important;
+	margin: 0px;
+font-weight: bold !important;
+
+
+}
+
+/* a space that make a line between up and down */
+
+.space{
+height: 10px;
+width: 390px;
+background-color: var(--white) ;
+
+
+
+}
+.tableText2{
+
+	font-size: 12px;
+	margin: 0px;
+font-weight: bold;
+
+
+}
+
+/* here is the styling tags for the second page */
+
+.advices{
+
+	background-color: var(--bg);
+
+}
+.textHintSelectWrapper{
+text-align: right;
+width: 100%;
+height: 36px;
+}
+.selectTextHint{
+width: fit-content;
+height: 30px;
+border-bottom: 1px solid black;
+
+}
+.btnWrapper{
+
+
+}
+.selectBtn{
+width: 128px;
+box-shadow: 1px 4px 4px #8f8e8e;
+}
+
+
+.theTextRow{
+ text-align: center;
+padding: 1rem;
+width: 388px;
+height: 130;
+
+}
+
+.tableHeader{
+
+height: 47px;
+width: 388px;
+text-align: center;
+background-color: rgba(49, 82,58, 14%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.tableHeader p{
+	margin: 0px;
+}
+.textHotted{
+	font-weight: 400;
+}
+.tableHottedShow{
+display: grid;
+grid-template-columns: 30% 40% 30%;
+grid-template-rows: 43px 43px 43px 43px 43px 43px 43px  ;
+ border: solid 1px black;
+}
+.celll{
+text-align: center;
+border-bottom: dashed 1px #3B443B;
+border-right: dashed 1px #3B443B;
+}
+
+.celllRemoveBackground{
+border-right: none;
+
+}
+
+.headerStart{
+	background-color: #D9D9D9;
+}
+
+/* advices table background color */
+
+.tableGreen{
+	background-color: rgba(60, 142, 22, 17%);
+}
+
+.TableYellow{
+	background-color:rgba(239, 221, 54, 42%);
+}
+.orangeTable{
+	background-color: rgba(239, 100, 0, 37%);
+}
+.RedTable{
+background-color: rgba(239, 0, 0, 36%);
+}
+ 
+.tempWrpper{
+
+    padding: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   
+
+}
+.select__vila__name{
+
+	color: white; 
+	background-color: var(--dark);
+border: none;
+outline: none;
+box-shadow: none;
+
+}
+.select__vila__name:focus{
+outline: none;
+box-shadow: none;
+}
+
+.stick{
+
+position: sticky;
+top: 0px !important;
+}
+
+.stickToHaed{
+	position: sticky;
+	top: 0px !important;
+width: 100%;
+}
+.bgIcons{
+background: rgb(243, 243, 243);
+	color: #EF6400 !important;
+}
+
+.imgRainCloud{
+    width: 40px;
+	height: 32px;
+}
+.textDesRainImg{
+width: 72px;
+height: 24px;
+	
+}
+.colorRainShow{
+width: 35px;
+height: 22px;
+border: black solid 1px;
+
+}
+.TextDesColor{
+margin: 0px;
+width: 58px;
+    height: 16px;
+    font-size: 10px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+/* hint table font size  */
+
+.FontSize{
+
+font-size: 14px;
+
+}
+.dashedDiv{
+	height: 1px;
+height: 100%;
+border-bottom: 1px dashed black;
+}
+
+.LowRain{
+
+background-color: var(--LightRain) ;
+}
+.HighRain{
+background-color: var(--heavyRain);
+
+}
+  
+/* and ect */
+
+.wrapperscroll{
+	height: 30vh !important;
+	overflow-x: scroll;
+	background-color: #fff;
+	}
+	
+	.wrapperscroll::-webkit-scrollbar{
+display: none !important;
+	}
+	
+
+
+
+	.item{
+	min-width: 110px;
+	height: 110px;
+	}
+	.font-bold{
+		font-weight: 600;
+	}
+	 
+	.c{
+		background-color: #FFD700;
+	}
+	
+	#select :focus{
+	
+		outline: none !important;
+		box-shadow: none;
+		outline: none;
+	}
+
+	.back{
+width: 30px;
+height: 10px;
+position: absolute;
+left: 90%;
+top: 17%;
+	}
+	.forward{
+		width: 30px;
+		height: 30px;
+position: absolute;
+left: 0%;
+top: 30%;
+
+
+	}
+
+	#perScrollBtn{
+		display: none !important;
+	}
+	#nextScrollBtn{
+		display: none !important;
+	}
+	
+/* responsive  the mobile sizes */
+
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+  }
+  
+
+
+
+
+
+
+
+
+
+.borderRight{
+
+border-right: .5px solid black ;
+
+}
+
+.color{
+
+color: #c9cc03;
+
+}
+
+
+
+.offer{
+	padding-left: 11px !important; 
+    padding-right: 1px !important;
+}
+
+
+ /* mobile__wrapper از این قسمت به پایین در 
+ height: auto !important; این قسمت اضافه شده */
+
+ @media only screen and (max-width: 1100px) {
+	body {
+	 
+	}
+	.LogoWrapper{
+		grid-template-columns:  12% 20% 19% 10% 27% 12% ;
+	}
+	.tableData{
+		grid-template-columns:  12% 20% 19% 10% 27% 12% ;
+	}
+.mobile__wrapper{
+width:  100% !important;
+height: 87vh !important;		overflow-y: scroll !important;
+}
+.mobile__wrapper::-webkit-scrollbar{
+display: none !important;
+}
+.space{
+    width: 100% !important;
+}
+
+	.itWillBeStickToHead{
+
+		position: sticky !important;
+		top: 286px !important;
+		z-index:  2 !important;
+		}
+  }
+
+  @media only screen and (max-width: 900px) {
+	.mobile__wrapper{
+		height: 86vh !important;
+	}
+	#perScrollBtn{
+		display: inline !important;
+	}
+	#nextScrollBtn{
+		display: inline !important;
+	}
+	.LogoWrapper{
+		grid-template-columns:  12% 20% 19% 10% 27% 12% ;
+	}
+	.tableData{
+		grid-template-columns:  12% 20% 19% 10% 27% 12% ;
+	}
+	.itWillBeStickToHead{
+
+		position: sticky !important;
+		top: 286px !important;
+		z-index:  2 !important;
+		}
+  }
+
+@media only screen and (max-width: 800px) {
+	body {
+	
+	}
+	.content{
+		padding: 0% !important;
+	}
+.mobile__wrapper{
+height: 85vh !important;
+width:  100% !important;
+overflow-y: scroll !important;
+}
+.space{
+    width: 100% !important;
+}
+.tableText{
+
+	
+font-size: 12px !important;
+}
+.ImgeW{
+	width: 16px !important;
+}
+.tableText2{
+
+
+	}
+	.itWillBeStickToHead{
+
+		position: sticky !important;
+		top: 299px !important;
+		z-index:  2 !important;
+		}
+	
+		.tableText{
+	
+			font-size: 12px !important;
+			}
+			.ImgeW{
+				width: 12px !important;
+			}
+			.tableText2{
+				font-size: 12px !important;
+			
+				}
+				.itWillBeStickToHead{
+
+					position: sticky !important;
+					top: 286px !important;
+					z-index:  2 !important;
+					}
+					.LogoWrapper{
+						grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+					}
+					.tableData{
+						grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+					}
+  }
+  @media only screen and (max-width: 600px ) {
+.mobile__wrapper{
+	height: 84vh !important;		overflow-y: scroll !important;
+}
+	.tableText{
+	
+		font-size: 12px !important;
+		}
+		.LogoWrapper{
+			grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+		}
+		.tableData{
+			grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+		}
+		.ImgeW{
+			width: 12px !important;
+		}
+		.tableText2{
+			font-size: 12px !important;
+		
+			}
+			.itWillBeStickToHead{
+
+				position: sticky !important;
+				top: 286px !important;
+				z-index:  2 !important;
+				}
+  }
+  @media only screen and (max-width: 500px ) {
+.mobile__wrapper{
+	height: 86vh !important;		overflow-y: scroll !important;
+}
+.LogoWrapper{
+	grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+}
+.tableData{
+	grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+}
+	.tableText{
+	
+	font-size: 10px !important;
+	}
+	.ImgeW{
+		width: 10px !important;
+	}
+	.tableText2{
+		font-size: 10px !important;
+	
+		}
+		.itWillBeStickToHead{
+
+			position: sticky !important;
+			top: 299px !important;
+			z-index:  2 !important;
+			}
+			#perScrollBtn{
+				display: inline !important;
+			}
+			#nextScrollBtn{
+				display: inline !important;
+			}
+			.selectBtn {
+				font-size: 13px !important;
+						width: 110px !important;
+					}
+					.itWillBeStickToHead{
+
+						position: sticky !important;
+						top: 286px !important;
+						z-index:  2 !important;
+						}
+  }
+  @media only screen and (max-width: 460px ) {
+.mobile__wrapper{
+	overflow-y: scroll !important;
+	height: 85vh !important;
+	padding: 0px !important;
+box-shadow: none;
+}
+
+	.tableText{
+	
+	font-size: 11px !important;
+	}
+	.ImgeW{
+		width: 11px !important;
+	}
+	.tableText2{
+		font-size: 11px !important;
+	
+		}
+		.itWillBeStickToHead{
+
+			position: sticky !important;
+			top: 289px !important;
+			z-index:  2 !important;
+			}
+			#perScrollBtn{
+				display: inline !important;
+			}
+			#nextScrollBtn{
+				display: inline !important;
+			}
+			.itWillBeStickToHead{
+
+				position: sticky !important;
+				top: 286px !important;
+				z-index:  2 !important;
+				}
+				.LogoWrapper{
+					grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+				}
+				.tableData{
+					grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+				}
+	
+			}
+
+
+
+  @media only screen and (max-width: 450px ) {
+.content{
+	padding: 0px !important;
+}
+	.mobile__wrapper{
+	padding: 1px;		overflow-y: scroll !important;
+	height: 87vh !important;
+	width:  100% !important;
+	padding-left: 4% !important;
+	padding-right: 4% !important;
+	}
+	.space{
+		width: 100% !important;
+	}
+	.tableText{
+
+	font-size: 11px !important;
+	}
+	.ImgeW{
+		width: 11px !important;
+	}
+
+	.tableText2{
+	font-size: 11px !important;
+
+	}
+	.itWillBeStickToHead{
+
+		position: sticky !important;
+		top: 286px !important;
+		z-index:  2 !important;
+		}
+		#perScrollBtn{
+			display: inline !important;
+			width: 13% !important;
+		}
+		#nextScrollBtn{
+			display: inline !important;
+			width: 13% !important;
+		}
+		.selectBtn {
+			font-size: 13px !important;
+					width: 100px !important;
+				}
+				.itWillBeStickToHead{
+
+					position: sticky !important;
+					top: 286px !important;
+					z-index:  2 !important;
+					}
+					.LogoWrapper{
+						grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+					}
+					.tableData{
+						grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+					}
+	  }
+	  @media only screen and (max-width: 400px ) {
+
+		.mobile__wrapper{
+		padding: 0px;		overflow-y: scroll !important;
+		height: 86vh   !important;
+
+		padding-left: 4% !important;
+		padding-right: 4% !important;
+		width:  100% !important;
+		}
+		.space{
+			width: 100% !important;
+		}
+		.tableText{
+			font-weight: bold !important;
+		font-size: 11px !important;
+		}
+		.ImgeW{
+			width: 11px !important;
+		}
+
+		.tableText2{
+		font-size: 11px !important;
+	
+		}
+		.itWillBeStickToHead{
+
+			position: sticky !important;
+			top: 286px !important;
+			z-index:  2 !important;
+			}
+			#perScrollBtn{
+				display: inline !important;
+				width: 15% !important;
+			}
+			#nextScrollBtn{
+				display: inline !important;
+				width: 15% !important;
+			}
+			.selectBtn {
+				font-size: 13px !important;
+						width: 90px !important;
+					}
+					.itWillBeStickToHead{
+
+						position: sticky !important;
+						top: 286px !important;
+						z-index:  2 !important;
+						}
+						.LogoWrapper{
+							grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+						}
+						.tableData{
+							grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+						}
+		  }
+		  @media only screen and (max-width: 380px ) {
+
+			.mobile__wrapper{
+  max-height: 85vh !important;	
+ min-height: 85vh !important; 
+  overflow-y: scroll !important;
+			width:  100% !important;
+			padding: 0px !important;
+			padding-left: 4% !important;
+			padding-right: 4% !important;
+			}
+			.space{
+				width: 100% !important;
+			}
+			
+			.tableText{
+
+			font-size: 10px !important;
+			}
+			.ImgeW{
+				width: 10px !important;
+			}
+
+			.itWillBeStickToHead{
+
+				position: sticky !important;
+				top: 299px !important;
+				z-index:  2 !important;
+				}
+				#perScrollBtn{
+					display: inline !important;
+				}
+				#nextScrollBtn{
+					display: inline !important;
+				}
+				.selectBtn {
+					font-size: 11px !important;
+							width: 80px !important;
+						}
+						#weatherLine{
+							font-size: 15px !important;
+						}
+						.itWillBeStickToHead{
+
+							position: sticky !important;
+							top: 286px !important;
+							z-index:  2 !important;
+							}
+							.LogoWrapper{
+								grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+							}
+							.tableData{
+								grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+							}
+					}
+
+
+
+  @media only screen and (max-width: 340px ) {
+	.mobile__wrapper{
+		padding: 0px !important;
+		overflow-y: scroll !important;
+		height: 82vh !important;
+		padding-left: 4% !important;
+		padding-right: 4% !important;
+	}
+	.selectBtn {
+font-size: 10px !important;
+		width: 70px !important;
+	}
+	.tableText{
+
+	
+	font-size: 9px !important;
+	}
+	.itWillBeStickToHead{
+
+		position: sticky !important;
+		top: 286px !important;
+		z-index:  2 !important;
+		}
+	.ImgeW{
+		width: 9px !important;
+	}
+	.tableText2{
+		font-size: 9px !important;
+		
+		}
+		.itWillBeStickToHead{
+
+			position: sticky !important;
+			top: 85vh !important;
+			z-index:  2 !important;
+			}
+			#perScrollBtn{
+				display: inline !important;
+			}
+			#nextScrollBtn{
+				display: inline !important;
+			}
+			.itWillBeStickToHead{
+
+				position: sticky !important;
+				top: 286px !important;
+				z-index:  2 !important;
+				}
+				.LogoWrapper{
+					grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+				}
+				.tableData{
+					grid-template-columns:  10% 20% 19% 10% 31% 10% ;
+				}
+  }
+
+/* For modern browsers */  
+@-webkit-keyframes moein {
+    0% { transform:scale(.7) ; -webkit-transform:scale(.7) ; -moz-transform:scale(.7) ; -ms-transform:scale(.7) ; -o-transform:scale(.7) ; }
+    50% { transform:scale(1.2) ; -webkit-transform:scale(1.2) ; -moz-transform:scale(1.2) ; -ms-transform:scale(1.2) ; -o-transform:scale(1.2) ; }
+    100% { transform:scale(.7) ; -webkit-transform:scale(.7) ; -moz-transform:scale(.7) ; -ms-transform:scale(.7) ; -o-transform:scale(.7) ; }
+ }
+
+.Logos{
+   animation: 2s  moein infinite ease .3s ;
+   z-index: 1 !important;
+   -webkit-animation: 2s  moein infinite ease .3s ;
+   cursor: pointer !important;
+}
+
+.stickToHaed{
+z-index: 3 !important;
+
+}
+
+.btn__hint__show{
+
+width: 100px !important;
+background-color: transparent !important;
+padding-left:  .8rem !important  ;
+
+}
+.showDays{
+
+min-height: 9rem !important;
+max-height: 9rem !important;
+
+}
+#hintShow{
+padding: 4px 0px !important;
+
+}
+
+.veryHighRain{
+	background-color: #68AAE8 !important ;
+}
+
+
+
+  
